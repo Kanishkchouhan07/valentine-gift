@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Message by Kanishk Chouhan</title>
+    <link rel="stylesheet" href="Style.css" />
+  </head>
+  <body>
+    <div class="book">
+      <div class="page">
+        <div class="front cover">
+          <h1
+            style="
+              color: rgb(227, 222, 222);
+              text-shadow: 5px 2px 5px rgb(0, 0, 0);
+            "
+          >
+            A Message for You🤍
+          </h1>
+
+          <p
+            style="
+              color: rgb(255, 255, 255);
+              text-shadow: 5px 2px 5px rgb(0, 0, 0);
+            "
+          >
+            BY.<br />Kanishk Chouhan
+          </p>
+        </div>
+        <div class="back">
+          <h2>Introduction</h2>
+
+          <video id="myVideo" src="video.mp4" 
+          style="width: 100%; max-width: 600px; height: auto;" 
+          controls>
+      </video>
+            <!-- Hidden Audio Player -->
+    <audio id="myAudio">
+        <source src="music.mp3" type="audio/mp3">
+        Your browser does not support the audio tag.
+    </audio>
+
+    <script>
+        const video = document.getElementById("myVideo");
+        const audio = document.getElementById("myAudio");
+
+        // Play audio when video starts
+        video.addEventListener("play", () => {
+            audio.currentTime = video.currentTime; // Sync time
+            audio.play();
+        });
+
+        // Pause audio when video pauses
+        video.addEventListener("pause", () => {
+            audio.pause();
+        });
+
+        // Sync audio when seeking or jumping in video
+        video.addEventListener("seeked", () => {
+            audio.currentTime = video.currentTime;
+        });
+
+        // Keep audio in sync with video
+        video.addEventListener("timeupdate", () => {
+            if (Math.abs(video.currentTime - audio.currentTime) > 0.2) {
+                audio.currentTime = video.currentTime;
+            }
+        });
+
+        // Stop audio when video ends
+        video.addEventListener("ended", () => {
+            audio.pause();
+        });
+    </script>
+            
+
+          <p>
+            Play Video Before Start Reading... <br />Since we Meet in
+            College on March 15 , 2022, ....
+          </p>
+        </div>
+      </div>
+      <!--2nd page-->
+      <div class="page">
+        <div class="front">
+          <p>
+            It’s incredible to think that just a few days ago, I didn’t even know you existed. Meeting you at college was the kind of unexpected twist I’ll always be grateful for. At first, I wasn’t sure how we’d connect, what we’d talk about, or what you’d be like. But now, after just a short time of knowing you, I’ve come to realize something—you’re absolutely amazing, and I can’t help but feel lucky to have met you.
+          </p>
+        </div>
+        <div class="back">
+          <img src="./11.jpg" alt="Img 1" />
+        </div>
+      </div>
+      <!--3rd page-->
+      <div class="page">
+        <div class="front">
+          <h2>Your Beauty >>> 🌍</h2>
+          <p>
+            There’s a charm about you—an indescribable beauty that leaves me breathless. From the sparkle in your eyes to the warmth of your smile, everything about you feels effortlessly perfect. Sometimes, I can’t help but think that you were crafted like a masterpiece, delicately designed to bring light into the world—and into my life.
+          </p>
+        </div>
+        <div class="back">
+          <p>
+            What makes you truly special isn’t just your beauty, but your dedication and passion. You’re not just someone to admire—you’re someone to be inspired by. The way you work so hard and stay so focused makes me respect you even more. You have the heart of a true leader—someone who naturally earns love and admiration in everything you do.
+          </p>
+        </div>
+      </div>
+      <!--4th page-->
+      <div class="page">
+        <div class="front">
+          <h2>🤞💖</h2>
+          <p>
+            Talking to you has quickly become one of my favorite parts of the
+            day. Every time I see a message from you, I can't help but smile. It
+            feels like my day instantly gets brighter just because of our
+            conversation. You're not just great to look at; your personality
+            makes you even more special.
+          </p>
+        </div>
+        <div class="back">
+          <img src="./22.jpg" alt="Img 1" />
+        </div>
+      </div>
+      <!--5th page-->
+      <div class="page">
+        <div class="front">
+          <p>
+            Talking to you has become the best part of my day. Every time I see a message from you, I can’t help but smile. Just knowing we’re talking makes everything feel brighter. You’re not just beautiful—you have a personality that makes you even more special.
+          </p>
+        </div>
+        <div class="back">
+          <p>
+            You inspire me, and I want you to know that I’ll always be here for you, no matter what. If you ever need anything, just send me a message, and I’ll be there. My time is yours whenever you need me.
+          </p>
+        </div>
+      </div>
+      <!--6th page-->
+      <div class="page">
+        <div class="front">
+          <h2>Your Perfection</h2>
+          <p>
+            Can we talk about how stunning you look in any outfit? Your
+            confidence and the way you carry yourself are truly admirable. You
+            have this amazing presence that captivates anyone around you, and
+            your natural charm is simply undeniable.
+          </p>
+        </div>
+        <div class="back">
+          <p>
+            No matter what you wear, you always look absolutely stunning. Honestly, I’m in awe of you. Your confidence, energy, and presence light up every room and captivate everyone around you.
+          </p>
+        </div>
+      </div>
+      <!--7th page-->
+      <div class="page">
+        <div class="front">
+          <h2>🌹❤</h2>
+          <p>
+            I just wanted to let you know how much I appreciate you, how much I
+            admire you, and how thankful I am to have crossed paths with you,
+            even if it’s been for a short time.
+          </p>
+        </div>
+        <div class="back">
+          <p>Will You be Mine? </p>
+        </div>
+      </div>
+
+      <div class="page">
+        <div class="front">
+          <img src="./44.png" alt="Img 1" />
+        </div>
+        <div class="back cover">
+          <h3>Cutest Queen Of My life</h3>
+          <p>
+            Content:By Kanishk Chouhan<br /><a
+              href=""
+              target="_blank"
+              rel="nofollow"
+            ></a>
+
+            <br />
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="Script.js">
+     </script>
+  </body>
+</html>
